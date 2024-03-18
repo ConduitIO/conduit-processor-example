@@ -1,20 +1,32 @@
-name: test
+name: Test
 
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main
   pull_request:
+    branches:
+      - main
 
 jobs:
-  test:
+  test-package_complexp:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v2
 
-      - name: Set up Go
-        uses: actions/setup-go@v5
-        with:
-          go-version-file: 'go.mod'
+      - name: Run make test for package complexp
+        run: |
+          cd complexp
+          make test
 
-      - name: Test
-        run: make test
+  test-package_simple:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Run make test for package simple
+        run: |
+          cd simple
+          make test
