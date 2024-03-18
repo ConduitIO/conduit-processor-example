@@ -12,7 +12,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-go@v5
         with:
-          go-version-file: '../../complexp/go.mod'
+          go-version-file: 'complexp/go.mod'
 
       - name: Golangci-lint version
         id: golangci-lint-version
@@ -31,7 +31,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-go@v5
         with:
-          go-version-file: '../../simple/go.mod'
+          go-version-file: 'simple/go.mod'
 
       - name: Golangci-lint version
         id: golangci-lint-version
