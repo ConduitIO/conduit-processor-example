@@ -9,7 +9,7 @@ on:
       - main
 
 jobs:
-  test-package1:
+  test-package_complexp:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -20,7 +20,7 @@ jobs:
           cd complexp
           make test
 
-  test-package2:
+  test-package_simple:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
