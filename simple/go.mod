@@ -5,6 +5,7 @@ go 1.22.0
 require (
 	github.com/conduitio/conduit-commons v0.0.1
 	github.com/conduitio/conduit-processor-sdk v0.1.0
+	github.com/matryer/is v1.4.1
 )
 
 require (

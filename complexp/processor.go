@@ -45,7 +45,7 @@ type processorConfig struct {
 
 func (p *Processor) Specification() (sdk.Specification, error) {
 	return sdk.Specification{
-		Name:       "processor-complexp",
+		Name:       "processor-complex",
 		Version:    "v1.0.0",
 		Parameters: processorConfig{}.Parameters(),
 	}, nil
