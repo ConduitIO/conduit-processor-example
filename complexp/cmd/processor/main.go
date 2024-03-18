@@ -1,4 +1,4 @@
-// Copyright © 2023 Meroxa, Inc.
+// Copyright © 2024 Meroxa, Inc.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -12,12 +12,15 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-//go:build tools
+//go:build wasm
 
 package main
 
 import (
-	_ "github.com/conduitio/conduit-commons/paramgen"
-	_ "github.com/golangci/golangci-lint/cmd/golangci-lint"
-	_ "mvdan.cc/gofumpt"
+	sdk "github.com/conduitio/conduit-processor-sdk"
+	"github.com/conduitio/demo-processor/complex"
 )
+
+func main() {
+	sdk.Run(complexp.NewProcessor())
+}

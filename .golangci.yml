@@ -89,7 +89,6 @@ linters:
     - importas
     - ineffassign
     - interfacebloat
-    - ireturn
     - loggercheck
     - maintidx
     - makezero
