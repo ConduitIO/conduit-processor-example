@@ -12,4 +12,4 @@ cd simple
 make
 ````
 
-For more details on how to build your own processor, how to run it, or how it works, check [Standalone Processors](https://conduit.io/docs/processors/standalone/building).
+For more details on how to build your own processor, how to run it, or how it works, check [Standalone Processors](https://conduit.io/docs/processors/standalone).
