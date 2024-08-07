@@ -19,6 +19,7 @@ import (
 	"fmt"
 	"strconv"
 
+	"github.com/conduitio/conduit-commons/config"
 	"github.com/conduitio/conduit-commons/opencdc"
 	sdk "github.com/conduitio/conduit-processor-sdk"
 )
@@ -51,8 +52,8 @@ func (p *Processor) Specification() (sdk.Specification, error) {
 	}, nil
 }
 
-func (p *Processor) Configure(ctx context.Context, m map[string]string) error {
-	err := sdk.ParseConfig(ctx, m, &p.config, processorConfig{}.Parameters())
+func (p *Processor) Configure(ctx context.Context, c config.Config) error {
+	err := sdk.ParseConfig(ctx, c, &p.config, processorConfig{}.Parameters())
 	if err != nil {
 		return fmt.Errorf("failed to parse configuration: %w", err)
 	}
