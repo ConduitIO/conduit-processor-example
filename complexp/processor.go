@@ -17,9 +17,9 @@ package complexp
 import (
 	"context"
 	"fmt"
-	"github.com/conduitio/conduit-commons/config"
 	"strconv"
 
+	"github.com/conduitio/conduit-commons/config"
 	"github.com/conduitio/conduit-commons/opencdc"
 	sdk "github.com/conduitio/conduit-processor-sdk"
 )
