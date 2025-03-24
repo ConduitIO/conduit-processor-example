@@ -5,7 +5,7 @@ toolchain go1.24.1
 
 require (
 	github.com/conduitio/conduit-commons v0.5.1
-	github.com/golangci/golangci-lint v1.64.7
+	github.com/golangci/golangci-lint v1.64.8
 	mvdan.cc/gofumpt v0.7.0
 )
 
