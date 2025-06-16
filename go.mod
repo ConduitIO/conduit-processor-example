@@ -3,7 +3,7 @@ module github.com/conduitio/conduit-processor-example
 go 1.24.2
 
 require (
-	github.com/conduitio/conduit-commons v0.5.4
+	github.com/conduitio/conduit-commons v0.6.0
 	github.com/golangci/golangci-lint v1.64.8
 	mvdan.cc/gofumpt v0.8.0
 )
